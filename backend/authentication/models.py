@@ -58,7 +58,7 @@ class User(AbstractBaseUser):
     is_email_verified = models.BooleanField(default=False)
 
     # Toggle this field if you want to delete the user
-    is_active = models.BooleanField(default=False)
+    is_active = models.BooleanField(default=True)
 
     # If the user is not a staff user, he can't login to the admin panel. This is django's default behaviour and we can't do much about it.
     is_staff = models.BooleanField(default=False)
